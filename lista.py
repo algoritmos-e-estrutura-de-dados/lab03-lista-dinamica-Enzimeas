@@ -18,6 +18,13 @@ class Lista:
 
             aux.proximo = Node(valor, None)
 
+
+    def adicionar_inicio(self,valor):
+        valor = Node(valor,None)
+        valor.proximo = self.inicio
+        self.inicio = valor
+       
+
     def show(self):       
         aux = self.inicio
         print("[", end='')
